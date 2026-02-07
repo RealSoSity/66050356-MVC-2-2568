@@ -4,6 +4,6 @@ RumourId,Title,Source,CreatedDate,CredibilityScore,Status,VerificationStatus,Ver
 34567891,Major Earthquake Expected Tonight,TikTok,2026-02-03,55.0,NORMAL,TRUE_RUMOUR,C001,2026-02-05
 45678912,Explosion Reported at Mall B,Line,2026-02-03,20.0,PANIC,FALSE_RUMOUR,C002,2026-02-06
 56789123,New Digital Cash Handout Announced Today,Facebook,2026-02-04,60.0,NORMAL,UNVERIFIED,,
-67891234,Schools to Close for Two Weeks,Instagram,2026-02-04,45.0,NORMAL,UNVERIFIED,,
+67891234,Schools to Close for Two Weeks,Instagram,2026-02-04,45.0,PANIC,UNVERIFIED,,
 78912345,New Vaccine Batch Causes Severe Illness,YouTube,2026-02-05,25.0,NORMAL,FALSE_RUMOUR,C002,2026-02-07
 89123456,Main City Bridge Will Collapse Tonight,WebForum,2026-02-05,30.0,NORMAL,UNVERIFIED,,

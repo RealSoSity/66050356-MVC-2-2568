@@ -22,8 +22,9 @@ public class MainFrame extends JFrame { // Main application frame with card layo
     private final RumourDetailView detailView;
     private final SummaryView summaryView;
 
-    public MainFrame(RumourController rumourController, ReportController reportController, SummaryController summaryController) {
-        super("Rumour Management System");
+    public MainFrame(RumourController rumourController, ReportController reportController,
+            SummaryController summaryController) {
+        super("Rumour Tracking System");
         this.listView = new RumourListView(this, rumourController);
         this.detailView = new RumourDetailView(this, rumourController, reportController);
         this.summaryView = new SummaryView(this, summaryController);
@@ -42,12 +43,12 @@ public class MainFrame extends JFrame { // Main application frame with card layo
         listView.refresh();
         cardLayout.show(root, CARD_LIST);
     }
-    
+
     public void showDetail(String rumourId) {
         detailView.loadRumour(rumourId);
         cardLayout.show(root, CARD_DETAIL);
     }
-    
+
     public void showSummary() {
         summaryView.refresh();
         cardLayout.show(root, CARD_SUMMARY);
