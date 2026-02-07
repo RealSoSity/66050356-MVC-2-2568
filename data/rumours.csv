@@ -1,5 +1,5 @@
 RumourId,Title,Source,CreatedDate,CredibilityScore,Status,VerificationStatus,VerifiedBy,VerifiedDate
-12345678,Contaminated Drinking Water in District A,Facebook,2026-02-01,35.0,PANIC,UNVERIFIED,,
+12345678,Contaminated Drinking Water in District A,Facebook,2026-02-01,35.0,PANIC,FALSE_RUMOUR,12345678,2026-02-07
 23456789,Banks Will Close Tomorrow,X,2026-02-02,40.0,PANIC,UNVERIFIED,,
 34567891,Major Earthquake Expected Tonight,TikTok,2026-02-03,55.0,NORMAL,TRUE_RUMOUR,C001,2026-02-05
 45678912,Explosion Reported at Mall B,Line,2026-02-03,20.0,PANIC,FALSE_RUMOUR,C002,2026-02-06
