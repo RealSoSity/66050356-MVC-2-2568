@@ -49,9 +49,9 @@ public class RumourService { // Service for managing rumours with business logic
     }
 
     // Verify rumour with business logic
-    public void verifyRumour(String ChekerId, String rumourId, VerificationStatus status) {
+    public void verifyRumour(String checkerId, String rumourId, VerificationStatus status) {
         // Check if Checker user exists
-        User checker = userRepository.findById(ChekerId);
+        User checker = userRepository.findById(checkerId);
         if (checker == null) {
             throw new IllegalArgumentException("Checker User does not exist");
         }
@@ -68,7 +68,7 @@ public class RumourService { // Service for managing rumours with business logic
             throw new IllegalArgumentException("Rumour has already been verified");
         }
 
-        rumour.verify(status, rumourId, LocalDate.now());
+        rumour.verify(status, checkerId, LocalDate.now());
         rumourRepository.update(rumour);
     }
 }
