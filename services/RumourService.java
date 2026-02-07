@@ -63,7 +63,7 @@ public class RumourService { // Service for managing rumours with business logic
 
         Rumour rumour = getRumour(rumourId);
 
-        // Check if rumour is already verified (prevent re-verification)
+        // Check if rumour is already verified, Users with the CHECKER role can re-verify.
         if (checker.getRole() != Role.CHECKER && rumour.isLockedForReporting()) {
             throw new IllegalArgumentException("Rumour has already been verified");
         }
